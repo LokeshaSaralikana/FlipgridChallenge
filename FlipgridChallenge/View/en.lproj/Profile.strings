@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Hello, User!"; ObjectID = "5d3-hX-0GK"; */
+"5d3-hX-0GK.text" = "Hello, User!";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "AWv-a0-yHp"; */
+"AWv-a0-yHp.placeholder" = "First Name";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "C88-uN-WZX"; */
+"C88-uN-WZX.normalTitle" = "Submit";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Qc3-Dp-6is"; */
+"Qc3-Dp-6is.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Use the form below to submit your portfolio. An email and password are required."; ObjectID = "T6K-zB-9c1"; */
+"T6K-zB-9c1.text" = "Use the form below to submit your portfolio. An email and password are required.";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "Zd6-MG-NiI"; */
+"Zd6-MG-NiI.placeholder" = "Email Address";
+
+/* Class = "UITextField"; placeholder = "Website"; ObjectID = "aIh-ME-hpf"; */
+"aIh-ME-hpf.placeholder" = "Website";
+
+/* Class = "UILabel"; text = "Your super-awesome portfolio has been successfully submitted! The preview below is what the community will see!"; ObjectID = "b44-Gm-yCB"; */
+"b44-Gm-yCB.text" = "Your super-awesome portfolio has been successfully submitted! The preview below is what the community will see!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bXI-PJ-2wa"; */
+"bXI-PJ-2wa.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "fug-ho-r6L"; */
+"fug-ho-r6L.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "Tap to add avatar"; ObjectID = "oEV-VN-HAJ"; */
+"oEV-VN-HAJ.text" = "Tap to add avatar";
+
+/* Class = "UILabel"; text = "Profile Creation"; ObjectID = "r2Y-6i-K6m"; */
+"r2Y-6i-K6m.text" = "Profile Creation";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yxr-S6-D7D"; */
+"yxr-S6-D7D.text" = "Label";

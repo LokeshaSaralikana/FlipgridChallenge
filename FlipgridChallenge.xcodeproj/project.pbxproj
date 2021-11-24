@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E191F2B274971E900D7E642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F2A274971E900D7E642 /* AppDelegate.swift */; };
+		4E191F2D274971E900D7E642 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F2C274971E900D7E642 /* SceneDelegate.swift */; };
+		4E191F32274971E900D7E642 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E191F30274971E900D7E642 /* Profile.storyboard */; };
+		4E191F34274971EB00D7E642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E191F33274971EB00D7E642 /* Assets.xcassets */; };
+		4E191F37274971EB00D7E642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E191F35274971EB00D7E642 /* LaunchScreen.storyboard */; };
+		4E191F4D274971EB00D7E642 /* FlipgridChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F4C274971EB00D7E642 /* FlipgridChallengeUITests.swift */; };
+		4E191F5B27497A1800D7E642 /* ProfileFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F5A27497A1800D7E642 /* ProfileFlowViewController.swift */; };
+		4E191F5D27497A6500D7E642 /* ProfileCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F5C27497A6500D7E642 /* ProfileCreationViewController.swift */; };
+		4E191F612749A99E00D7E642 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F602749A99E00D7E642 /* UIViewController+Additions.swift */; };
+		4E191F632749B5A900D7E642 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F622749B5A900D7E642 /* ProfileViewModel.swift */; };
+		4E191F652749E2E200D7E642 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F642749E2E200D7E642 /* Profile.swift */; };
+		4E191F67274A399B00D7E642 /* PhotoPickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F66274A399B00D7E642 /* PhotoPickerCoordinator.swift */; };
+		4E191F69274A484500D7E642 /* ProfileConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E191F68274A484500D7E642 /* ProfileConfirmationViewController.swift */; };
+		4E9437D4274CD8B8008C9355 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437D3274CD8B8008C9355 /* GradientButton.swift */; };
+		4E9437D6274CECDF008C9355 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437D5274CECDF008C9355 /* ProfileViewModelTests.swift */; };
+		4E9437DA274CF498008C9355 /* ConfirmationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437D9274CF498008C9355 /* ConfirmationViewModelTests.swift */; };
+		4E9437DD274E26B8008C9355 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437DC274E26B8008C9355 /* NetworkService.swift */; };
+		4ECBF379274B7DA400FCD5C6 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF378274B7DA400FCD5C6 /* ConfirmationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E191F3E274971EB00D7E642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E191F1F274971E900D7E642 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E191F26274971E900D7E642;
+			remoteInfo = FlipgridChallenge;
+		};
+		4E191F49274971EB00D7E642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E191F1F274971E900D7E642 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E191F26274971E900D7E642;
+			remoteInfo = FlipgridChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E191F27274971E900D7E642 /* FlipgridChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipgridChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E191F2A274971E900D7E642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E191F2C274971E900D7E642 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E191F31274971E900D7E642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		4E191F33274971EB00D7E642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E191F36274971EB00D7E642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E191F38274971EB00D7E642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E191F3D274971EB00D7E642 /* FlipgridChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipgridChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E191F43274971EB00D7E642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E191F48274971EB00D7E642 /* FlipgridChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipgridChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E191F4C274971EB00D7E642 /* FlipgridChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipgridChallengeUITests.swift; sourceTree = "<group>"; };
+		4E191F4E274971EB00D7E642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E191F5A27497A1800D7E642 /* ProfileFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowViewController.swift; sourceTree = "<group>"; };
+		4E191F5C27497A6500D7E642 /* ProfileCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreationViewController.swift; sourceTree = "<group>"; };
+		4E191F602749A99E00D7E642 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		4E191F622749B5A900D7E642 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4E191F642749E2E200D7E642 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		4E191F66274A399B00D7E642 /* PhotoPickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerCoordinator.swift; sourceTree = "<group>"; };
+		4E191F68274A484500D7E642 /* ProfileConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConfirmationViewController.swift; sourceTree = "<group>"; };
+		4E9437D3274CD8B8008C9355 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		4E9437D5274CECDF008C9355 /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
+		4E9437D8274CF3D0008C9355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Profile.strings; sourceTree = "<group>"; };
+		4E9437D9274CF498008C9355 /* ConfirmationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModelTests.swift; sourceTree = "<group>"; };
+		4E9437DC274E26B8008C9355 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4ECBF378274B7DA400FCD5C6 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E191F24274971E900D7E642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E191F3A274971EB00D7E642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E191F45274971EB00D7E642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E191F1E274971E900D7E642 = {
+			isa = PBXGroup;
+			children = (
+				4E191F29274971E900D7E642 /* FlipgridChallenge */,
+				4E191F40274971EB00D7E642 /* FlipgridChallengeTests */,
+				4E191F4B274971EB00D7E642 /* FlipgridChallengeUITests */,
+				4E191F28274971E900D7E642 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E191F28274971E900D7E642 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F27274971E900D7E642 /* FlipgridChallenge.app */,
+				4E191F3D274971EB00D7E642 /* FlipgridChallengeTests.xctest */,
+				4E191F48274971EB00D7E642 /* FlipgridChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E191F29274971E900D7E642 /* FlipgridChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F2A274971E900D7E642 /* AppDelegate.swift */,
+				4E191F2C274971E900D7E642 /* SceneDelegate.swift */,
+				4E191F33274971EB00D7E642 /* Assets.xcassets */,
+				4E9437D2274CD87A008C9355 /* CustomView */,
+				4ECBF377274AD80F00FCD5C6 /* Extensions */,
+				4ECBF376274AD7F200FCD5C6 /* Helper */,
+				4ECBF373274AD7D700FCD5C6 /* Model */,
+				4ECBF374274AD7E100FCD5C6 /* View */,
+				4ECBF375274AD7E600FCD5C6 /* ViewModel */,
+				4E9437DB274CF7EE008C9355 /* Network */,
+				4E191F35274971EB00D7E642 /* LaunchScreen.storyboard */,
+				4E191F38274971EB00D7E642 /* Info.plist */,
+			);
+			path = FlipgridChallenge;
+			sourceTree = "<group>";
+		};
+		4E191F40274971EB00D7E642 /* FlipgridChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E9437D5274CECDF008C9355 /* ProfileViewModelTests.swift */,
+				4E9437D9274CF498008C9355 /* ConfirmationViewModelTests.swift */,
+				4E191F43274971EB00D7E642 /* Info.plist */,
+			);
+			path = FlipgridChallengeTests;
+			sourceTree = "<group>";
+		};
+		4E191F4B274971EB00D7E642 /* FlipgridChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F4C274971EB00D7E642 /* FlipgridChallengeUITests.swift */,
+				4E191F4E274971EB00D7E642 /* Info.plist */,
+			);
+			path = FlipgridChallengeUITests;
+			sourceTree = "<group>";
+		};
+		4E9437D2274CD87A008C9355 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				4E9437D3274CD8B8008C9355 /* GradientButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		4E9437DB274CF7EE008C9355 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4E9437DC274E26B8008C9355 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4ECBF373274AD7D700FCD5C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F642749E2E200D7E642 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4ECBF374274AD7E100FCD5C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F30274971E900D7E642 /* Profile.storyboard */,
+				4E191F5A27497A1800D7E642 /* ProfileFlowViewController.swift */,
+				4E191F5C27497A6500D7E642 /* ProfileCreationViewController.swift */,
+				4E191F68274A484500D7E642 /* ProfileConfirmationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4ECBF375274AD7E600FCD5C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F622749B5A900D7E642 /* ProfileViewModel.swift */,
+				4ECBF378274B7DA400FCD5C6 /* ConfirmationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4ECBF376274AD7F200FCD5C6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F66274A399B00D7E642 /* PhotoPickerCoordinator.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4ECBF377274AD80F00FCD5C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E191F602749A99E00D7E642 /* UIViewController+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E191F26274971E900D7E642 /* FlipgridChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E191F51274971EB00D7E642 /* Build configuration list for PBXNativeTarget "FlipgridChallenge" */;
+			buildPhases = (
+				4E191F23274971E900D7E642 /* Sources */,
+				4E191F24274971E900D7E642 /* Frameworks */,
+				4E191F25274971E900D7E642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipgridChallenge;
+			productName = FlipgridChallenge;
+			productReference = 4E191F27274971E900D7E642 /* FlipgridChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E191F3C274971EB00D7E642 /* FlipgridChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E191F54274971EB00D7E642 /* Build configuration list for PBXNativeTarget "FlipgridChallengeTests" */;
+			buildPhases = (
+				4E191F39274971EB00D7E642 /* Sources */,
+				4E191F3A274971EB00D7E642 /* Frameworks */,
+				4E191F3B274971EB00D7E642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E191F3F274971EB00D7E642 /* PBXTargetDependency */,
+			);
+			name = FlipgridChallengeTests;
+			productName = FlipgridChallengeTests;
+			productReference = 4E191F3D274971EB00D7E642 /* FlipgridChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E191F47274971EB00D7E642 /* FlipgridChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E191F57274971EB00D7E642 /* Build configuration list for PBXNativeTarget "FlipgridChallengeUITests" */;
+			buildPhases = (
+				4E191F44274971EB00D7E642 /* Sources */,
+				4E191F45274971EB00D7E642 /* Frameworks */,
+				4E191F46274971EB00D7E642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E191F4A274971EB00D7E642 /* PBXTargetDependency */,
+			);
+			name = FlipgridChallengeUITests;
+			productName = FlipgridChallengeUITests;
+			productReference = 4E191F48274971EB00D7E642 /* FlipgridChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E191F1F274971E900D7E642 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4E191F26274971E900D7E642 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4E191F3C274971EB00D7E642 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4E191F26274971E900D7E642;
+					};
+					4E191F47274971EB00D7E642 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4E191F26274971E900D7E642;
+					};
+				};
+			};
+			buildConfigurationList = 4E191F22274971E900D7E642 /* Build configuration list for PBXProject "FlipgridChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E191F1E274971E900D7E642;
+			productRefGroup = 4E191F28274971E900D7E642 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E191F26274971E900D7E642 /* FlipgridChallenge */,
+				4E191F3C274971EB00D7E642 /* FlipgridChallengeTests */,
+				4E191F47274971EB00D7E642 /* FlipgridChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E191F25274971E900D7E642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E191F37274971EB00D7E642 /* LaunchScreen.storyboard in Resources */,
+				4E191F34274971EB00D7E642 /* Assets.xcassets in Resources */,
+				4E191F32274971E900D7E642 /* Profile.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E191F3B274971EB00D7E642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E191F46274971EB00D7E642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E191F23274971E900D7E642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E191F632749B5A900D7E642 /* ProfileViewModel.swift in Sources */,
+				4E191F2B274971E900D7E642 /* AppDelegate.swift in Sources */,
+				4E191F5D27497A6500D7E642 /* ProfileCreationViewController.swift in Sources */,
+				4E191F69274A484500D7E642 /* ProfileConfirmationViewController.swift in Sources */,
+				4E9437D4274CD8B8008C9355 /* GradientButton.swift in Sources */,
+				4E191F67274A399B00D7E642 /* PhotoPickerCoordinator.swift in Sources */,
+				4ECBF379274B7DA400FCD5C6 /* ConfirmationViewModel.swift in Sources */,
+				4E191F652749E2E200D7E642 /* Profile.swift in Sources */,
+				4E191F5B27497A1800D7E642 /* ProfileFlowViewController.swift in Sources */,
+				4E191F612749A99E00D7E642 /* UIViewController+Additions.swift in Sources */,
+				4E9437DD274E26B8008C9355 /* NetworkService.swift in Sources */,
+				4E191F2D274971E900D7E642 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E191F39274971EB00D7E642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9437DA274CF498008C9355 /* ConfirmationViewModelTests.swift in Sources */,
+				4E9437D6274CECDF008C9355 /* ProfileViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E191F44274971EB00D7E642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E191F4D274971EB00D7E642 /* FlipgridChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E191F3F274971EB00D7E642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E191F26274971E900D7E642 /* FlipgridChallenge */;
+			targetProxy = 4E191F3E274971EB00D7E642 /* PBXContainerItemProxy */;
+		};
+		4E191F4A274971EB00D7E642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E191F26274971E900D7E642 /* FlipgridChallenge */;
+			targetProxy = 4E191F49274971EB00D7E642 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E191F30274971E900D7E642 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E191F31274971E900D7E642 /* Base */,
+				4E9437D8274CF3D0008C9355 /* en */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		4E191F35274971EB00D7E642 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E191F36274971EB00D7E642 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E191F4F274971EB00D7E642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E191F50274971EB00D7E642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E191F52274971EB00D7E642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U8XJSBZ3C;
+				INFOPLIST_FILE = FlipgridChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lokesh.FlipgridChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E191F53274971EB00D7E642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U8XJSBZ3C;
+				INFOPLIST_FILE = FlipgridChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lokesh.FlipgridChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E191F55274971EB00D7E642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD79QQ88SN;
+				INFOPLIST_FILE = FlipgridChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lokesh.FlipgridChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipgridChallenge.app/FlipgridChallenge";
+			};
+			name = Debug;
+		};
+		4E191F56274971EB00D7E642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD79QQ88SN;
+				INFOPLIST_FILE = FlipgridChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lokesh.FlipgridChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipgridChallenge.app/FlipgridChallenge";
+			};
+			name = Release;
+		};
+		4E191F58274971EB00D7E642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD79QQ88SN;
+				INFOPLIST_FILE = FlipgridChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lokesh.FlipgridChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlipgridChallenge;
+			};
+			name = Debug;
+		};
+		4E191F59274971EB00D7E642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD79QQ88SN;
+				INFOPLIST_FILE = FlipgridChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lokesh.FlipgridChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlipgridChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E191F22274971E900D7E642 /* Build configuration list for PBXProject "FlipgridChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E191F4F274971EB00D7E642 /* Debug */,
+				4E191F50274971EB00D7E642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E191F51274971EB00D7E642 /* Build configuration list for PBXNativeTarget "FlipgridChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E191F52274971EB00D7E642 /* Debug */,
+				4E191F53274971EB00D7E642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E191F54274971EB00D7E642 /* Build configuration list for PBXNativeTarget "FlipgridChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E191F55274971EB00D7E642 /* Debug */,
+				4E191F56274971EB00D7E642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E191F57274971EB00D7E642 /* Build configuration list for PBXNativeTarget "FlipgridChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E191F58274971EB00D7E642 /* Debug */,
+				4E191F59274971EB00D7E642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E191F1F274971E900D7E642 /* Project object */;
+}
