@@ -15,6 +15,5 @@ Overview
 Not handled due to time constraint/out of scope
 * Simulating API call when submit button is tapped.
 * Implementation of Networking classes/protocols that provides the API service.
-* Showing an activity indicator when submit is tapped.
 * Accessiblity support.
-* Camera/Photo library access denied case.
+* Handling Camera/Photo library access denied case.
