@@ -1,5 +1,10 @@
 # FlipgridChallenge
 
+<img width="493" alt="Screen Shot 2021-11-25 at 1 42 29 PM" src="https://user-images.githubusercontent.com/4624036/143502257-c6b42365-f78f-4965-9404-04b99d413047.png"> 
+<img width="493" alt="Screen Shot 2021-11-25 at 1 43 25 PM" src="https://user-images.githubusercontent.com/4624036/143502263-b9064ef8-f561-43ac-8f89-389c4ec01b29.png">
+<img width="493" alt="Screen Shot 2021-11-25 at 1 43 33 PM" src="https://user-images.githubusercontent.com/4624036/143502276-6fa50e67-d618-4922-b12d-c96920521345.png">
+
+
 Overview
 * The project follows MVVM-FlowViewController architecture that scales nicely as more screens/flows are added.
 * I have added comments and TODOs/Out of Scopes througout the project.
