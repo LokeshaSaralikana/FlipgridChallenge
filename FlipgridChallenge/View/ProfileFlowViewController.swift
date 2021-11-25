@@ -13,7 +13,9 @@ class ProfileFlowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let profileCreationViewController = ProfileCreationViewController.createViewController(delegate: self)
+        let profileViewModel = ProfileViewModel()
+        let profileCreationViewController = ProfileCreationViewController.viewController(viewModel: profileViewModel)
+        profileCreationViewController.delegate = self
         transition(to: profileCreationViewController)
     }
 }
@@ -21,8 +23,8 @@ class ProfileFlowViewController: UIViewController {
 extension ProfileFlowViewController: ProfileCreationViewControllerDelegate {
     func submitTapped(profile: Profile) {
         let confirmationViewModel = ConfirmationViewModel(profile: profile)
-        let confirmationViewController = ProfileConfirmationViewController.createViewController(confirmationViewModel: confirmationViewModel,
-                                                                                                delegate: self)
+        let confirmationViewController = ProfileConfirmationViewController.viewController(viewModel: confirmationViewModel)
+        confirmationViewController.delegate = self
         transition(to: confirmationViewController)
     }
 }

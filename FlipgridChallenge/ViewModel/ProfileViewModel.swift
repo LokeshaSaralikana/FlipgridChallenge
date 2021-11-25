@@ -15,10 +15,17 @@ protocol ProfileViewModelViewDelegate: AnyObject {
 class ProfileViewModel {
     weak var viewDelegate: ProfileViewModelViewDelegate?
 
+    let networkService: NetworkServiceProtocol
+
+    // Injecting here helps in testing the network layer
+    init(networkService: NetworkServiceProtocol = NetworkService()) {
+        self.networkService = networkService
+    }
+
     // Out of scope - Keep a network service property to be used to invoke profile submit endpoint.
 
     // Model that is used to store the input data and will be used in submit(POST) API.
-    var profile: Profile?
+    var profile: Profile!
 
     var isEmailValid = false
     var isPasswordValid = false
@@ -74,11 +81,14 @@ class ProfileViewModel {
                           password: password,
                           website: website)
 
-        // Out of scope:
-        // Invoke submit API endpoint (potentially a REST endpoint with support for multipart/form-data) and handle success and error case
-        // (We may need to send additional meta data like filename, file type etc when avatar is present)
-        // Pass on the outcome of API call to view controller for further handling.
-        // Notify the view controller once profile creation enpoint response is received.
-        viewDelegate?.loginHandler(profile: profile)
+        networkService.submitProfile(profile: profile) { [weak self] result in
+            switch result {
+            case .success(let profile):
+                self?.viewDelegate?.loginHandler(profile: profile)
+            case .failure:
+                // Out of scope: handle error
+                break
+            }
+        }
     }
 }

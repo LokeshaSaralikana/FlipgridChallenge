@@ -10,7 +10,7 @@ protocol ProfileCreationViewControllerDelegate: AnyObject {
     func submitTapped(profile: Profile)
 }
 
-class ProfileCreationViewController: UIViewController {
+class ProfileCreationViewController: UIViewController, ViewModelViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -23,22 +23,14 @@ class ProfileCreationViewController: UIViewController {
     @IBOutlet weak var submitButton: GradientButton!
 
     weak var delegate: ProfileCreationViewControllerDelegate?
-    private var profileViewModel = ProfileViewModel()
     private var photoPickerCoordinator: PhotoPickerCoordinator?
 
-    static func createViewController(delegate: ProfileCreationViewControllerDelegate?) -> ProfileCreationViewController {
-        let storyboard = UIStoryboard(name: "Profile", bundle: Bundle(for: Self.self))
-        guard let viewController = storyboard.instantiateViewController(identifier: "ProfileCreationViewController") as? ProfileCreationViewController else {
-            fatalError("\(String(describing: self)) creation failed")
-        }
-        viewController.delegate = delegate
-
-        return viewController
-    }
+    var viewModel: ProfileViewModel!
+    static var storyboardName: String = "Profile"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileViewModel.viewDelegate = self
+        viewModel.viewDelegate = self
         
         setupObservers()
         setupTapGestures()
@@ -81,11 +73,11 @@ class ProfileCreationViewController: UIViewController {
     @IBAction func didTapSubmit(_ sender: UIButton) {
         view.endEditing(true)
         activityIndicator.startAnimating()
-        profileViewModel.submitTapped(avatar: avatarImageView.image,
-                                      firstName: firstNameField.text,
-                                      email: emailField.text!,
-                                      password: passwordField.text!,
-                                      website: websiteField.text)
+        viewModel.submitTapped(avatar: avatarImageView.image,
+                               firstName: firstNameField.text,
+                               email: emailField.text!,
+                               password: passwordField.text!,
+                               website: websiteField.text)
     }
 }
 
@@ -95,9 +87,9 @@ extension ProfileCreationViewController: UITextFieldDelegate {
         guard let activeTextField = notification.object as? UITextField else { return }
 
         if activeTextField == emailField {
-            profileViewModel.email = activeTextField.text ?? ""
+            viewModel.email = activeTextField.text ?? ""
         } else if activeTextField == passwordField {
-            profileViewModel.password = activeTextField.text ?? ""
+            viewModel.password = activeTextField.text ?? ""
         }
     }
 
@@ -145,16 +137,15 @@ extension ProfileCreationViewController: ProfileViewModelViewDelegate {
     }
 
     func loginHandler(profile: Profile?) {
-        // TODO: Display error if the API returns failure
+        // Out of scope: Display error if the API returns failure
         // Transition to confirmation screen if the API returns success
         guard let profile = profile else {
             // show error - invalid response
             return
         }
-        // Simulating the activity progress
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
-            self?.activityIndicator.stopAnimating()
-            self?.delegate?.submitTapped(profile: profile)
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.delegate?.submitTapped(profile: profile)
         }
     }
 }

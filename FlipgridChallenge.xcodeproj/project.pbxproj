@@ -25,6 +25,7 @@
 		4E9437DA274CF498008C9355 /* ConfirmationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437D9274CF498008C9355 /* ConfirmationViewModelTests.swift */; };
 		4E9437DD274E26B8008C9355 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437DC274E26B8008C9355 /* NetworkService.swift */; };
 		4E9437DF274F1081008C9355 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437DE274F1080008C9355 /* InputTextField.swift */; };
+		4E9437E127501F1C008C9355 /* ViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9437E027501F1C008C9355 /* ViewModelViewController.swift */; };
 		4ECBF379274B7DA400FCD5C6 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF378274B7DA400FCD5C6 /* ConfirmationViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		4E9437D9274CF498008C9355 /* ConfirmationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModelTests.swift; sourceTree = "<group>"; };
 		4E9437DC274E26B8008C9355 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4E9437DE274F1080008C9355 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		4E9437E027501F1C008C9355 /* ViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelViewController.swift; sourceTree = "<group>"; };
 		4ECBF378274B7DA400FCD5C6 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				4E191F66274A399B00D7E642 /* PhotoPickerCoordinator.swift */,
+				4E9437E027501F1C008C9355 /* ViewModelViewController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				4ECBF379274B7DA400FCD5C6 /* ConfirmationViewModel.swift in Sources */,
 				4E191F652749E2E200D7E642 /* Profile.swift in Sources */,
 				4E191F5B27497A1800D7E642 /* ProfileFlowViewController.swift in Sources */,
+				4E9437E127501F1C008C9355 /* ViewModelViewController.swift in Sources */,
 				4E9437DF274F1081008C9355 /* InputTextField.swift in Sources */,
 				4E191F612749A99E00D7E642 /* UIViewController+Additions.swift in Sources */,
 				4E9437DD274E26B8008C9355 /* NetworkService.swift in Sources */,

@@ -11,7 +11,7 @@ protocol ProfileConfirmationViewControllerDelegate: AnyObject {
     func signInTapped()
 }
 
-class ProfileConfirmationViewController: UIViewController {
+class ProfileConfirmationViewController: UIViewController, ViewModelViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
@@ -21,19 +21,9 @@ class ProfileConfirmationViewController: UIViewController {
     @IBOutlet weak var signInButton: GradientButton!
 
     weak var delegate: ProfileConfirmationViewControllerDelegate?
+
     var viewModel: ConfirmationViewModel!
-
-    static func createViewController(confirmationViewModel: ConfirmationViewModel,
-                                     delegate: ProfileConfirmationViewControllerDelegate?) -> ProfileConfirmationViewController {
-        let storyboard = UIStoryboard(name: "Profile", bundle: Bundle(for: Self.self))
-        guard let viewController = storyboard.instantiateViewController(identifier: "ProfileConfirmationViewController") as? ProfileConfirmationViewController else {
-            fatalError("\(String(describing: self)) creation failed")
-        }
-        viewController.viewModel = confirmationViewModel
-        viewController.delegate = delegate
-
-        return viewController
-    }
+    static var storyboardName: String = "Profile"
 
     override func viewDidLoad() {
         super.viewDidLoad()
