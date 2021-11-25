@@ -13,6 +13,7 @@ protocol ProfileCreationViewControllerDelegate: AnyObject {
 class ProfileCreationViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var addAvatarLabel: UILabel!
     @IBOutlet weak var firstNameField: UITextField!
@@ -79,6 +80,7 @@ class ProfileCreationViewController: UIViewController {
 
     @IBAction func didTapSubmit(_ sender: UIButton) {
         view.endEditing(true)
+        activityIndicator.startAnimating()
         profileViewModel.submitTapped(avatar: avatarImageView.image,
                                       firstName: firstNameField.text,
                                       email: emailField.text!,
@@ -149,7 +151,11 @@ extension ProfileCreationViewController: ProfileViewModelViewDelegate {
             // show error - invalid response
             return
         }
-        delegate?.submitTapped(profile: profile)
+        // Simulating the activity progress
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+            self?.activityIndicator.stopAnimating()
+            self?.delegate?.submitTapped(profile: profile)
+        }
     }
 }
 

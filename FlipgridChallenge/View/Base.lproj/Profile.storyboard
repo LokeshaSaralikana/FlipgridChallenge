@@ -150,12 +150,18 @@
                                             <constraint firstItem="aIh-ME-hpf" firstAttribute="top" secondItem="Qc3-Dp-6is" secondAttribute="bottom" constant="10" id="wxL-I5-ldd"/>
                                         </constraints>
                                     </view>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pDx-2X-PtO">
+                                        <rect key="frame" x="188.66666666666666" y="390.66666666666669" width="37" height="37"/>
+                                        <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="pDx-2X-PtO" firstAttribute="centerX" secondItem="tGB-vH-fSf" secondAttribute="centerX" id="2OE-mH-vJf"/>
                                     <constraint firstItem="Q1z-Kn-BQs" firstAttribute="leading" secondItem="tGB-vH-fSf" secondAttribute="leading" id="N05-WR-BjZ"/>
                                     <constraint firstItem="Q1z-Kn-BQs" firstAttribute="top" secondItem="tGB-vH-fSf" secondAttribute="top" id="XCJ-bw-AV7"/>
                                     <constraint firstAttribute="bottom" secondItem="Q1z-Kn-BQs" secondAttribute="bottom" priority="250" id="f7C-OM-Qej"/>
                                     <constraint firstAttribute="trailing" secondItem="Q1z-Kn-BQs" secondAttribute="trailing" id="gOD-HR-928"/>
+                                    <constraint firstItem="pDx-2X-PtO" firstAttribute="centerY" secondItem="tGB-vH-fSf" secondAttribute="centerY" id="kiD-pa-623"/>
                                     <constraint firstItem="Q1z-Kn-BQs" firstAttribute="centerY" secondItem="tGB-vH-fSf" secondAttribute="centerY" priority="250" id="nDv-si-5nk"/>
                                     <constraint firstItem="Q1z-Kn-BQs" firstAttribute="centerX" secondItem="tGB-vH-fSf" secondAttribute="centerX" id="pfk-R4-P0b"/>
                                 </constraints>
@@ -173,6 +179,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="pDx-2X-PtO" id="dfA-cH-UOs"/>
                         <outlet property="addAvatarLabel" destination="oEV-VN-HAJ" id="oiB-Em-ISw"/>
                         <outlet property="avatarImageView" destination="sto-1q-Ur8" id="8Zd-cd-OOB"/>
                         <outlet property="emailField" destination="Zd6-MG-NiI" id="hNG-SO-KcD"/>

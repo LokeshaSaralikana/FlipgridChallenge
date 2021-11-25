@@ -67,6 +67,6 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This allows you to choose a profile picture from photo library. </string>
 	<key>UIUserInterfaceStyle</key>
-	<string>UIUserInterfaceStyleLight</string>
+	<string>Light</string>
 </dict>
 </plist>
