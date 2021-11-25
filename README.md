@@ -12,6 +12,9 @@ Overview
 * The code is tested on iPad as well, should work without any issues. However, the UI layout could be more polished to suit the bigger screen.
 * Added unit tests for viewmodels.
 
-TODOs
-* Add activity indicator when intergrating the API.
+Not handled due to time constraint/out of scope
+* Simulating API call when submit button is tapped.
+* Implementation of Networking classes/protocols that provides the API service.
+* Showing an activity indicator when submit is tapped.
 * Accessiblity support.
+* Camera/Photo library access denied case.
