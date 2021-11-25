@@ -16,10 +16,10 @@ class ProfileCreationViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var addAvatarLabel: UILabel!
-    @IBOutlet weak var firstNameField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var websiteField: UITextField!
+    @IBOutlet weak var firstNameField: InputTextField!
+    @IBOutlet weak var emailField: InputTextField!
+    @IBOutlet weak var passwordField: InputTextField!
+    @IBOutlet weak var websiteField: InputTextField!
     @IBOutlet weak var submitButton: GradientButton!
 
     weak var delegate: ProfileCreationViewControllerDelegate?
