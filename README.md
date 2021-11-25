@@ -11,9 +11,11 @@ Overview
 * Displaying a default placeholder avatar in case a user hasn't selected an avatar during profile creation. This enhances the User experience compared to when no avatar is shown.
 * The code is tested on iPad as well, should work without any issues. However, the UI layout could be more polished to suit the bigger screen.
 * Added unit tests for viewmodels.
+* Implementation of basic networking classes/protocols that provides the API service.
+* Provide a protocol approach to create view controllers that enforces a relationship with viewmodel.
+* Simulating network activity with basic activity indicator view
 
 Not handled due to time constraint/out of scope
-* Simulating API call when submit button is tapped.
-* Implementation of Networking classes/protocols that provides the API service.
+* Mock test for Network service.
 * Accessiblity support.
 * Handling Camera/Photo library access denied case.
