@@ -21,6 +21,7 @@ Overview
 * Simulating network activity with basic activity indicator view
 
 Not handled due to time constraint/out of scope
+* Making use of Combine and @Publisher concepts for viewModel binding as I'm not hands on with those concepts at the moment.
 * Mock test for Network service.
 * Accessiblity support.
 * Handling Camera/Photo library access denied case.
